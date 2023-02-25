@@ -3,4 +3,3 @@ def medicaid_eligibility(is_citizen, age, is_disability, is_parent_or_pregnant):
         return True
     return False
 
-print(medicaid_eligibility(True, 68, True, True))

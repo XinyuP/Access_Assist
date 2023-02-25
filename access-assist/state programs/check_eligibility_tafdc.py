@@ -3,4 +3,3 @@ def tafdc_eligibility(children_age, is_pregnant, lives_in_ma, is_citizen):
         return True
     return False
 
-print(tafdc_eligibility(20, False, False, True))

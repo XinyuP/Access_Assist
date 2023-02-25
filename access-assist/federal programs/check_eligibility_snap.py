@@ -15,4 +15,3 @@ def snap_eligibility(income_per_month, household):
         return True
     return False
 
-print(snap_eligibility(3050, 2))
