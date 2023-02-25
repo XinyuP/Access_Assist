@@ -2,3 +2,4 @@
 env/
 *.temp
 node_modules
+keys.txt
