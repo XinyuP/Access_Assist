@@ -1,0 +1,39 @@
+.home-title{
+    
+	text-align: center;
+}
+
+.home-content{
+    text-align: center;
+    font-size: x-large;
+}
+
+.intro{
+    font-size: medium;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: double;
+    text-align: center;
+    font-size: medium;
+    
+    
+    
+}
+
+.intro p{
+    font-family: emoji;
+    font-size: x-large;
+}
+
+.whole-website{
+    background-color:#C2E8EA;
+
+
+}
+.content{
+    background-color:black;
+    height:100vh;
+    overflow: hidden;
+    margin-bottom: 0px;
+    
+}

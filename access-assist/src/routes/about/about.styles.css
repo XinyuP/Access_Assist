@@ -1,0 +1,39 @@
+.title {
+	text-align: center;
+}
+
+.p1 {
+	display: flex;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.about-page {
+	background-color: #d1f2f3;
+	height: 100vh;
+	font-family: emoji;
+	overflow: auto;
+}
+
+.f1 {
+	font-size: x-large;
+}
+
+.got-question {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.f3 {
+	font-size: large;
+}
+
+.space {
+	height: 100px;
+}
+
+.space1 {
+	height: 30px;
+}
