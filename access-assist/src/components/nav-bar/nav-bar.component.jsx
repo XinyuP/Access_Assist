@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { ReactComponent as WebsiteLogo } from '../../logos/blue bg logo_adobe_express.svg';
+import { ReactComponent as WebsiteLogo } from '../../logos/logo.svg';
 
 import './nav-bar.styles.css';
 

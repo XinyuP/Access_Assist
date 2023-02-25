@@ -8,11 +8,13 @@
 }
 
 .logo-container {
-	height: 100%;
-	width: 50px;
+	/* height: 50px; */
+	width: 200px;
+
+  overflow:hidden;
 	/* margin-top: 0; */
 	padding: 10px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .logo{
