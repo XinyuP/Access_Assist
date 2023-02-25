@@ -3,5 +3,8 @@
     "bootstrap": "^5.2.3",
     "react-bootstrap": "^2.7.2",
     "react-icons": "^4.7.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
   }
 }
