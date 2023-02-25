@@ -10,7 +10,8 @@
 }
 
 .about-page {
-	background-color: #d1f2f3;
+	/* background-color: #107cf1; */
+	background-color: white;
 	height: 100vh;
 	font-family: emoji;
 	overflow: auto;
