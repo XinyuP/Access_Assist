@@ -27,12 +27,37 @@
 	margin-bottom: 0px;
 }
 
-
-.home-spacer{
-    height: 30px;
+.home-spacer {
+	height: 30px;
 }
 
-.home-start{
-    text-align: center;
-    font-size: x-large;
+.home-start {
+	text-align: center;
+	font-size: x-large;
+}
+
+.home-arrow {
+	/* size: 500px; */
+	height: 400px;
+}
+
+.home-button {
+	position: absolute;
+	width: 338px;
+	height: 103px;
+	left: 184px;
+	top: 633px;
+
+	background: #f8cd51;
+	border-radius: 60px;
+}
+
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

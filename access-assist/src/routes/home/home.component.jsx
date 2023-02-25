@@ -1,5 +1,6 @@
 import React from 'react';
-import { AiOutlineArrowRight }from 'react-icons'
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import './home.styles.css';
 const Home = () => {
@@ -15,7 +16,13 @@ const Home = () => {
 					</p>
 				</div>
 				<h2 className='home-start'>Let's get started!</h2>
-				{/* <AiOutlineArrowRight/> */}
+
+				{/* <div className='home-arrow'><AiOutlineArrowRight /></div> */}
+				<Link to='/address'>
+					<div className='vertical-center'>
+						<button className='home-button'>Get Started <AiOutlineArrowRight/></button>
+					</div>
+				</Link>
 			</div>
 		</div>
 	);

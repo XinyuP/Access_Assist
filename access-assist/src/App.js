@@ -16,9 +16,8 @@ function App() {
 				<Route index element={<Home />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/about' element={<About />} />
-        <Route path='/address' element={<Address />} />
-        <Route path='/map' element={<Map />} />
-
+				<Route path='/address' element={<Address />} />
+				<Route path='/map' element={<Map />} />
 			</Route>
 		</Routes>
 		// </BrowserRouter>
@@ -27,5 +26,4 @@ function App() {
 
 export default App;
 
-
-// 16 124 241 
+// 16 124 241
