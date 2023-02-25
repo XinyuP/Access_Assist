@@ -1,0 +1,31 @@
+.address-label{
+
+    text-align: center;
+
+    width: 496px;
+    height: 72px;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    /* identical to box height, or 72px */
+    
+    letter-spacing: -0.022em;
+    
+    color: #1E1E1E;
+    
+}
+
+.address-label-p{
+    text-align: center;  
+}
+
+.address-field{
+    position: relative;
+    width: 448px;
+    height: 96px;
+    left: 112px;
+    top: 512px;
+}
