@@ -1,0 +1,42 @@
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #102452;
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #b8b8b8;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  input[type='text']:focus,
+  input[type='email']:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #f8cd51;
+    box-shadow: 0 0 0 0.2rem rgba(248, 205, 81, 0.25);
+  }
+  
+  button[type='submit'] {
+    background-color: #f8cd51;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #f8cd51;
+  }  

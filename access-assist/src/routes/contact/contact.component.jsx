@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import './contact.styles.css';
-class Contact extends Component {
+import QuestionForm from './contact.qna.component.jsx'
+
+const Contact = () => {
+	// write a react component that asks the user "what's your address?" and accepts a response in a form
+	return <QuestionForm/>
+};
+
+export default Contact;
+/*
 	handleSubmit(e) {
 		e.preventDefault();
 		alert('We have received your question! The stuff will contact you sooner!');
@@ -49,5 +57,6 @@ class Contact extends Component {
 		);
 	}
 }
+*/
 
-export default Contact;
+
