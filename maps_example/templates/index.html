@@ -3,13 +3,46 @@
     <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script>
+    // Adds a marker to the map.
+    function addMarker(location, map) {
+      // Add the marker at the clicked location, and add the next-available label
+      // from the array of alphabetical characters.
+      new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+    function initMap() {
+    // The location of Uluru
+      const b_center = { lat: 42.3597232, lng: -71.0622357 };
+      // The map, centered at Uluru
+      map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: b_center,
+      });
+
+      //{% for local in LOCALS %}
+      // The marker, positioned at Uluru
+      //const temp_pos = { lat : {LOCALS[0][0]}, lon : '{{LOCALS[0][1]}}' }
+      marker = new google.maps.Marker({
+        position: b_center,
+        map: map,
+      });
+      //{% endfor %}
+  }
+  
+  window.initMap = initMap;
+
+
+
+    </script>
   </head>
   <body>
     <h1>Boston Local Resources</h1>
     <div id="map"></div>
-
+    
     <!-- 
       The `defer` attribute causes the callback to execute after the full HTML
       document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -20,5 +53,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWcWHLVvoLzR40_G_IfOIENZpcPQNk7Tc&callback=initMap"
       defer
     ></script>
+    <h1>{{LOCALS}}</h1>
   </body>
 </html>
