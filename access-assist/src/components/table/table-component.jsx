@@ -1,7 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import check_eligibility_medicaid from '../../../federal programs/check_eligibility_medicaid'
 
-const Table = () => {
+const Table = (props) => {
+    const { responses } = props; 
+
     const data = [
       { id: 1, name: "Medicaid", value: check_eligibility_medicaid(responses.is_citizen, responses.age, responses.is_disability, responses.is_parent_or_pregnant ) },
       { id: 2, name: "SNAP", value: isValue2True(responses) },
@@ -23,11 +25,11 @@ const Table = () => {
         </thead>
         <tbody>
           {data.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-              <td>{item.value.toString()}</td>
-            </tr>
+               <tr key={item.id} className={item.value ? "true-value" : ""}>
+               <td>{item.id}</td>
+               <td>{item.name}</td>
+               <td>{item.value.toString()}</td>
+             </tr>
           ))}
         </tbody>
       </table>
@@ -35,11 +37,6 @@ const Table = () => {
   }
 
   export default Table;
-  
-  function isValue1True(responses) {
-    // Return true if the response to question 1 is true, otherwise false
-    return true;
-  }
   
   function isValue2True(responses) {
     // Return true if the response to question 2 is true, otherwise false
