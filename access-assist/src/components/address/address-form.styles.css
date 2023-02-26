@@ -7,26 +7,21 @@
 	color: #1e1e1e;
 	width: 100vw;
 
-
-
 	/* line-height: 150%; */
 	/* identical to box height, or 72px */
 
 	/* letter-spacing: -0.022em; */
 	overflow: hidden;
-
-	
 }
 
 .address-label-p {
 	text-align: center;
-	
 }
 
 .address-input {
 	position: relative;
-	width: 448px;
-	height: 96px;
+	width: 900px;
+	height: 50px;
 	border-radius: 18px;
 	background: #dbdbdb;
 	top: 50%;
@@ -37,9 +32,7 @@
 	/* margin-right: 100px; */
 	overflow: hidden;
 	font-size: large;
-		width: 100vw;
-
-	
+	width: 100vw;
 }
 
 /* .submit-button {
@@ -55,10 +48,10 @@
 	border-radius: 60px;
 } */
 .submit-button {
-	font-size: xx-large;
+	font-size: x-large;
 	position: relative;
-	width: 338px;
-	height: 103px;
+	width: 150px;
+	height: 60px;
 	/* top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
@@ -67,16 +60,15 @@
 	background: #f8cd51;
 	border-radius: 60px;
 	margin-bottom: 10px;
-	
 }
 
 .address-spacer-30 {
 	height: 30px;
 }
 
-
-
-
+.address-spacer-10 {
+	height: 10px;
+}
 
 .address-content {
 	height: 100vh;
@@ -85,9 +77,20 @@
 	margin-bottom: 0px;
 }
 
-
-.see{
+.see {
 	position: relative;
 	margin-top: 50px;
 	font-size: x-large;
+}
+
+.child {
+	font-size: large;
+}
+
+.input-styling {
+	display: block;
+	margin-left: 100px;
+	margin-right: 100px;
+
+	/* justify-content: center; */
 }

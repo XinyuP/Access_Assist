@@ -17,6 +17,8 @@ const Map = () => {
 	//     map: map,
 	// });
 
+	
+
 	return (
 		<div className='map-content'>
 			<p className='map-page-header'>Here are some resources near you!</p>

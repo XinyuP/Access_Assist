@@ -9,7 +9,8 @@ from flask_cors import CORS, cross_origin
 geolocator = Nominatim(user_agent="AccessAssist2")
 
 app = Flask(__name__)
-cors = CORS(app)
+# cors =
+CORS(app)
 # cors = CORS(app, resource={
 #     r"/*": {
 #         "origins": "*"

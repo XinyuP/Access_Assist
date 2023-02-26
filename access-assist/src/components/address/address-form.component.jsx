@@ -51,7 +51,7 @@ const AddressForm = () => {
 					return response.json();
 				}
 			})
-			.then(data=>setResponseData(data))
+			.then((data) => setResponseData(data))
 			.catch((error) => console.log(error));
 		setIsVisible(true);
 		// setAddress(address)
@@ -68,28 +68,35 @@ const AddressForm = () => {
 			<form onSubmit={handleSubmit}>
 				<label className='address-label'>
 					<p className='address-label-p'> What's your address? </p>
-					<div className='address-spacer-30'></div>
-					<input
-						className='address-input'
-						type='text'
-						name='input-address'
-						placeholder='Enter address'
-						value={address}
-						onChange={handleChange}
-					/>
-					{/* <div className='address-spacer-30'></div> */}
+					<div className='address-spacer-10'></div>
+					<div className='input-styling'>
+						<input
+							className='address-input'
+							type='text'
+							name='input-address'
+							placeholder='Enter address'
+							value={address}
+							onChange={handleChange}
+						/>
+					</div>
+
+					{/* <div className='address-spacer-10'></div> */}
 					<button type='submit' className='submit-button'>
 						Submit <AiOutlineArrowRight />
 					</button>
-					{responseData && <MapComp responseData={responseData} />}
+					<div className='address-spacer-30'></div>
+
+					<div className='child'>
+						{responseData && <MapComp responseData={responseData} />}
+					</div>
 
 					<br />
-					{isVisible && (
+					{/* {isVisible && (
 						<Link to='/map' className='see'>
 							We have generated the list of all the available resources around
 							you! Click here to see!
 						</Link>
-					)}
+					)} */}
 				</label>
 			</form>
 		</Fragment>

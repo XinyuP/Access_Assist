@@ -3,9 +3,7 @@ import json
 import pandas as pd
 # get long/lat of an address
 import requests
-import constants
-
-api_key = constants.api_key
+api_key = "AIzaSyAWcWHLVvoLzR40_G_IfOIENZpcPQNk7Tc"
 
 
 def get_lat_long(address, api_key=api_key):
@@ -27,12 +25,6 @@ def get_lat_long(address, api_key=api_key):
 # geocode addresses from csv
 df = pd.read_csv("data/index.csv")
 df["lat"], df["lon"] = zip(*df["address"].apply(lambda x: get_lat_long(x)))
-colors = ['#DFFF00', '#FFBF00', '#FF7F50', '#DE3163',
-          '#9FE2BF', '#40E0D0', '#6495ED', '#CCCCFF']
-program_types = set(df["program_type"])
-role_color = dict(zip(program_types, colors[:len(program_types)]))
-df["color"] = df["program_type"].apply(lambda x: role_color[x])
-
 df.to_csv("data/index_geocode.csv")
 
 # read in geocoded csv of local candidates and return json file of lat/long/title/type
@@ -62,9 +54,5 @@ def get_json_results(addr, df=df, max_distance=5):
     temp_df["distance"] = temp_df.apply(
         lambda x: distance(lat, lng, x["lat"], x["lon"]), axis=1)
     records = temp_df[temp_df["distance"] < max_distance]
-    records.index.rename("id", inplace=True)
     records.to_json("data/results.json", orient="records")
     return records.to_json(orient="records")
-
-
-get_json_results("4 Jersey St, Boston, MA 02215")
