@@ -4,3 +4,5 @@ function eaedc_eligibility(lives_in_ma, is_citizen, is_disabled, age) {
     }
         return false;
 }
+
+export default eaedc_eligibility
