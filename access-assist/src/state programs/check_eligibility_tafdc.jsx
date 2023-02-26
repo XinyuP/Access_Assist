@@ -5,4 +5,4 @@ function tafdc_eligibility(children_age, is_pregnant, lives_in_ma, is_citizen) {
         return false;
 }
 
-export default tafdc_eligibility
+export default tafdc_eligibility;

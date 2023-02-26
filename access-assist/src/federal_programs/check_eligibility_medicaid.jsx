@@ -4,4 +4,4 @@ function medicaid_eligibility(is_citizen, age, is_disability, is_parent_or_pregn
   }
   return false;
 }
-export default medicaid_eligibility
+export default medicaid_eligibility;

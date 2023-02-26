@@ -5,4 +5,4 @@ function headstart_eligibility(age, is_homeless, in_fostercare) {
         return false;
 }
 
-export default headstart_eligibility
+export default headstart_eligibility;
