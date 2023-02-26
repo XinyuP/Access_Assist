@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import check_eligibility_medicaid from '../../../federal programs/check_eligibility_medicaid'
+import check_eligibility_medicaid from '../../federal_programs/check_eligibility_medicaid'
 
 const Table = (props) => {
     const { responses } = props; 

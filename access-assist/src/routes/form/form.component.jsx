@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Table from '../../../components/table/table-component.jsx'
+import Table from '../../components/table/table-component.jsx'
 
 import './form.styles.css';
 function Form() {
@@ -21,7 +21,7 @@ function Form() {
     const handleSubmit = (event) => {
       event.preventDefault();
       // Call another function to generate a table with the responses
-      generateTable(responses);
+     
       <Table responses={responses}/>
     };
     return (
