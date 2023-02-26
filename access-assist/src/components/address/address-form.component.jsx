@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import './address-form.styles.css';
 
@@ -21,8 +22,9 @@ import './address-form.styles.css';
 // 	}
 // }
 
-const AddressForm = (props) => {
+const AddressForm = () => {
 	const [address, setAddress] = useState('');
+	const [isVisible, setIsVisible] = useState(false);
 
 	// const insertAddress = () => {
 	// 	APIService.InsertAddress({ address })
@@ -30,7 +32,7 @@ const AddressForm = (props) => {
 	// 		.catch((error) => console.log('error', error));
 	// };
 
-	function handleSubmit(event) {
+	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log(address);
 		//insertAddress();
@@ -48,38 +50,41 @@ const AddressForm = (props) => {
 				}
 			})
 			.catch((error) => console.log(error));
-
+		setIsVisible(true);
 		// setAddress(address)
 		event.preventDefault();
 		// do something with the address, like submit it to a server or store it in state
-	}
+	};
 
-	function handleChange(event) {
+	const handleChange = (event) => {
 		setAddress(event.target.value);
-	}
+	};
 
 	return (
 		<Fragment>
 			<form onSubmit={handleSubmit}>
-				<label class='address-label'>
-					<p class='address-label-p'> What's your address? </p>
+				<label className='address-label'>
+					<p className='address-label-p'> What's your address? </p>
 					<div className='address-spacer-30'></div>
 					<input
-						class='address-field'
+						className='address-input'
 						type='text'
 						name='input-address'
 						placeholder='Enter address'
 						value={address}
 						onChange={handleChange}
 					/>
+					{/* <div className='address-spacer-30'></div> */}
+					<button type='submit' className='submit-button'>
+						Submit <AiOutlineArrowRight />
+					</button>
+					<br/>
+					 {isVisible && <Link to='/map' className='see'>
+						We have generated the list of all the available resources around you!
+						Click here to see!
+					</Link>}
+					
 				</label>
-
-				<div className='address-spacer-30'></div>
-				<div className='address-spacer-30'></div>
-
-				<button type='submit' className='submit-button'>
-					Submit <AiOutlineArrowRight />
-				</button>
 			</form>
 		</Fragment>
 	);
