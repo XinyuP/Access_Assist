@@ -58,5 +58,3 @@ def get_json_results(addr, df = df, max_distance = 5):
     records.index.rename("id", inplace = True)
     records.to_json("data/results.json", orient = "records")
     return records.to_json(orient = "records")
-
-get_json_results("4 Jersey St, Boston, MA 02215")
