@@ -1,3 +1,6 @@
+
+
+import pandas as pd
 # get long/lat of an address
 import json
 import pandas as pd
@@ -22,3 +25,13 @@ def get_lat_long(address):
 
 
 # read in csv of local candidates and return json file of lat/long/title/type
+
+
+def get_json_results(addr, df=df, max_distance=5):
+    lat, lng = get_lat_long(addr)
+    temp_df = df.copy()
+    temp_df["distance"] = temp_df.apply(
+        lambda x: distance(lat, lng, x["lat"], x["lon"]), axis=1)
+    records = temp_df[temp_df["distance"] < max_distance]
+    records.to_json("data/results.json", orient="records")
+    return records.to_json(orient="records")
