@@ -35,7 +35,7 @@ const AddressForm = (props) => {
 		console.log(address);
 		//insertAddress();
 
-		fetch(`http://localhost:3000/api/address`, {
+		fetch(`http://127.0.0.1:5000/api/address`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const AddressForm = (props) => {
 			.catch((error) => console.log(error));
 
 		// setAddress(address)
-
+		event.preventDefault();
 		// do something with the address, like submit it to a server or store it in state
 	}
 
