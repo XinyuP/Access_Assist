@@ -4,3 +4,5 @@ function masshealth_eligibility(lives_in_ma, is_citizen) {
     }
         return false;
 }
+
+export default masshealth_eligibility

@@ -4,3 +4,5 @@ function ssi_eligibility(adult_age, adult_disabled, is_citizen, child_age, child
     }
         return false;
 }
+
+export default ssi_eligibility

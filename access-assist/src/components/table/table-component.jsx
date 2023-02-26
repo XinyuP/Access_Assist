@@ -17,8 +17,7 @@ const Table = (props) => {
       { id: 5, name: "Mass", value: masshealth_eligibility(responses.lives_in_ma, responses.is_citizen) },
       { id: 6, name: "SSI", value: ssi_eligibility(responses) },
       { id: 7, name: "TAFDC", value: tafdc_eligibility(responses.children_age, responses.is_pregnant, responses.lives_in_ma, responses.is_citizen) },
-    ];children_age, is_pregnant, lives_in_ma, is_citizen
-    ility(lives_in_ma, is_citizen, is_disabled, age) {
+    ];
     return (
       <table>
         <thead>
