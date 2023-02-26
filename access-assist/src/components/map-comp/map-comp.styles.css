@@ -1,0 +1,15 @@
+
+.map-button {
+    font-size: medium;
+	position: relative;
+	width: 170px;
+	height: 35px;
+    margin-top: 20px;
+	/* top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+
+	background: #f8cd51;
+	border-radius: 60px;
+}

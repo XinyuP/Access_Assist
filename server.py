@@ -3,11 +3,20 @@ import time
 import numpy as np
 import processing_address
 from geopy.geocoders import Nominatim
+from flask_cors import CORS, cross_origin
 
 # create a Nominatim object
 geolocator = Nominatim(user_agent="AccessAssist2")
 
 app = Flask(__name__)
+cors = CORS(app)
+# cors = CORS(app, resource={
+#     r"/*": {
+#         "origins": "*"
+#     }
+# })
+
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 api_key = "AIzaSyAWcWHLVvoLzR40_G_IfOIENZpcPQNk7Tc"
 
@@ -23,7 +32,7 @@ def handle_request():
     # Sleep for 1 second to prevent rate limiting
     time.sleep(1)
 
-    programs = processing_address.get_json_results()
+    programs = processing_address.get_json_results(address)
 
     return jsonify({
         'latitude': coords[0],
@@ -33,4 +42,4 @@ def handle_request():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

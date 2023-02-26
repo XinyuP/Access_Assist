@@ -7,7 +7,7 @@ import Navigation from './routes/navigation/navigation.component';
 import Map from './routes/map/map.component';
 import About from './routes/about/about.component';
 import Address from './routes/address/address.component';
-
+import Form from './routes/form/form.component';
 function App() {
 	return (
 		// <BrowserRouter>
@@ -18,6 +18,7 @@ function App() {
 				<Route path='/about' element={<About />} />
 				<Route path='/address' element={<Address />} />
 				<Route path='/map' element={<Map />} />
+				<Route path='/form' element={<Form />} />
 			</Route>
 		</Routes>
 		// </BrowserRouter>
