@@ -23,9 +23,12 @@ def handle_request():
     # Sleep for 1 second to prevent rate limiting
     time.sleep(1)
 
+    programs = processing_address.get_json_results()
+
     return jsonify({
         'latitude': coords[0],
-        'longitude': coords[1]
+        'longitude': coords[1],
+        'programs': programs
     })
 
 
