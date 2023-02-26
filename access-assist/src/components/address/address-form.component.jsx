@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import MapComp from '../map-comp/map-comp.component';
 
 import './address-form.styles.css';
 
@@ -25,6 +26,7 @@ import './address-form.styles.css';
 const AddressForm = () => {
 	const [address, setAddress] = useState('');
 	const [isVisible, setIsVisible] = useState(false);
+	const [responseData, setResponseData] = useState(null);
 
 	// const insertAddress = () => {
 	// 	APIService.InsertAddress({ address })
@@ -49,6 +51,7 @@ const AddressForm = () => {
 					return response.json();
 				}
 			})
+			.then(data=>setResponseData(data))
 			.catch((error) => console.log(error));
 		setIsVisible(true);
 		// setAddress(address)
@@ -78,12 +81,15 @@ const AddressForm = () => {
 					<button type='submit' className='submit-button'>
 						Submit <AiOutlineArrowRight />
 					</button>
-					<br/>
-					 {isVisible && <Link to='/map' className='see'>
-						We have generated the list of all the available resources around you!
-						Click here to see!
-					</Link>}
-					
+					{responseData && <MapComp responseData={responseData} />}
+
+					<br />
+					{isVisible && (
+						<Link to='/map' className='see'>
+							We have generated the list of all the available resources around
+							you! Click here to see!
+						</Link>
+					)}
 				</label>
 			</form>
 		</Fragment>
