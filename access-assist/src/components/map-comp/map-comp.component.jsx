@@ -8,13 +8,12 @@ import './map-comp.styles.css';
 const google = window.google
 
 
-
-
 // Initialize and add the map
 const initMap = (props) => {
     // The location of Uluru
 	const { responseData } = props;
 	console.log(responseData);
+	
 
     const current_loc = { lat: 42.3597232, lng: -71.0622357 }; // user input location 
     // The map, centered at Uluru
