@@ -9,7 +9,7 @@ function Form() {
 
 	const handleChange = (event) => {
 		const response = event.target.value === 'yes' ? true : false;
-		console.log('11111', event.target.value)
+		console.log('11111', event.target.value);
 		const name = event.target.name;
 
 		setResponses({
@@ -54,10 +54,10 @@ function Form() {
 					</select>
 				</div>
 
-				<div class='form-group'>
+				<div>
 					<label htmlFor='response-2'>Question 4: </label>
 					<label for='name-input'>
-						What'`s your household income per month?
+						What's your household income per month?
 					</label>
 					<input
 						type='text'
@@ -67,13 +67,13 @@ function Form() {
 					/>
 				</div>
 
-				<div class='form-group'>
+				<div>
 					<label htmlFor='response-2'>Question 5: </label>
 					<label for='name-input'> What's your age?</label>
 					<input type='text' id='age' name='age' placeholder='Enter your age' />
 				</div>
 
-				<div class='form-group'>
+				<div>
 					<label htmlFor='response-2'>Question 6: </label>
 					<label for='name-input'>What's your household size?</label>
 					<input
@@ -120,7 +120,7 @@ function Form() {
 					</select>
 				</div>
 
-				<div class='form-group'>
+				<div>
 					<label htmlFor='response-2'>Question 11: </label>
 					<label for='name-input'>What is your child's age?</label>
 					<input
@@ -133,6 +133,8 @@ function Form() {
 			</form>
 			{/* <button type='submit'>Submit</button> */}
 			<div className='spacer-30'></div>
+			<div className='spacer-30'></div>
+
 			<Link to='/table'>
 				<div className='vertical-center'>
 					<button type='submit' className='form-button'>

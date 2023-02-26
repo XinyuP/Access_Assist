@@ -3,6 +3,7 @@
     margin-right: 100px;
 }
 
+
 /* .form-button {
     font-size: xx-large;
 	position: relative;
@@ -37,3 +38,11 @@
 .spacer-30{
     height: 30px;
 }
+
+ /* input[type='text']{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #b8b8b8;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  } */
