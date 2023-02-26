@@ -12,7 +12,7 @@ app = Flask(__name__)
 api_key = "AIzaSyAWcWHLVvoLzR40_G_IfOIENZpcPQNk7Tc"
 
 
-@app.route('/address-user', methods=['POST'])
+@app.route('/api/address', methods=['POST'])
 def handle_request():
     data = request.get_json()
     address = data['address']
