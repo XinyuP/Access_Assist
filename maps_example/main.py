@@ -7,12 +7,14 @@ df = pd.read_csv("../data/index_geocode.csv")
 
 locals = list(zip(list(df["lat"]), list(df["lon"]), list(df["program_name"])))
 
+valid_locals = locals[:2]
+
 
 
 @app.route("/")
 def hello_world():
     
-    return render_template("index.html", LOCALS = locals, CENTER_LAT = 40.3597232, list_small = [1,2,3])
+    return render_template("index.html", valid_locals = valid_locals, CENTER_LAT = 40.3597232, list_small = [1,2,3])
 
 
 
