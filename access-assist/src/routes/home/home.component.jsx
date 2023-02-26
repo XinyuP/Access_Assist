@@ -24,7 +24,7 @@ const Home = () => {
 				{/* <div className='home-arrow'><AiOutlineArrowRight /></div> */}
 				<Link to='/address'>
 					<div className='vertical-center'>
-						<button className='home-button'>
+						<button type='submit' className='home-button'>
 							Get Started <AiOutlineArrowRight />
 						</button>
 					</div>

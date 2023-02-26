@@ -50,4 +50,6 @@
 .nav-link {
 	padding: 10px 15px;
 	cursor: pointer;
+	color: white;
+	text-decoration:none
 }

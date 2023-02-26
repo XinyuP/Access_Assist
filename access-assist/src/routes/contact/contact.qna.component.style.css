@@ -28,6 +28,7 @@
   }
   
   button[type='submit'] {
+
     background-color: #f8cd51;
     color: black;
     padding: 0.5rem 1rem;
@@ -40,3 +41,28 @@
   button[type='submit']:hover {
     background-color: #f8cd51;
   }  
+
+  .form-group{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+
+  .spacer-20{
+    height: 20px;
+  }
+
+
+  .contact-button {
+    font-size: x-large;
+	position: relative;
+	width: 200;
+	height: 50px;
+	/* top: 50%; */
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	background: #f8cd51;
+	border-radius: 60px;
+}

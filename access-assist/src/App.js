@@ -8,6 +8,7 @@ import Map from './routes/map/map.component';
 import About from './routes/about/about.component';
 import Address from './routes/address/address.component';
 import Form from './routes/form/form.component';
+import Table from './routes/table/table.component';
 function App() {
 	return (
 		// <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
 				<Route path='/address' element={<Address />} />
 				<Route path='/map' element={<Map />} />
 				<Route path='/form' element={<Form />} />
+				<Route path='/table' element={<Table />} />
 			</Route>
 		</Routes>
 		// </BrowserRouter>

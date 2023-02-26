@@ -21,7 +21,7 @@ class About extends Component {
 				<h2 className='got-question'>Have any questions?</h2>
 				<p className='got-question'>
 					Feel free to come talk with us &nbsp;{' '}
-					<Link className='nav-link' to='/contact'>
+					<Link className='here' to='/contact'>
 						here
 					</Link>
 					&nbsp;!
