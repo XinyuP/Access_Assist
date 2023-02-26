@@ -55,24 +55,23 @@ function Form() {
 				<label htmlFor='response-2'>Question 4: </label>
 				<select id='response-2' name='question2' onChange={handleChange}>
 					<option value=''>What’s your household income per month?</option>
-					<input value='yes'/>
-					{/* <option value='no'>No</option> */}
+          <input value='yes' />
+          
 				</select>
       </div>
       
       <div>
 				<label htmlFor='response-2'>Question 5: </label>
 				<select id='response-2' name='question2' onChange={handleChange}>
-					<option value=''>Do you have a disability?</option>
-					<option value='yes'>Yes</option>
-					<option value='no'>No</option>
+					<option value=''>What's your age?</option>
+				
 				</select>
       </div>
       
       <div>
 				<label htmlFor='response-2'>Question 6: </label>
 				<select id='response-2' name='question2' onChange={handleChange}>
-					<option value=''>Do you have a disability?</option>
+					<option value=''>6. What’s your household size?</option>
 					<option value='yes'>Yes</option>
 					<option value='no'>No</option>
 				</select>

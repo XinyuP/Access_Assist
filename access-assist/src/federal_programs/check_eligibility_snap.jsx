@@ -16,3 +16,5 @@ function snap_eligibility(income_per_month, household) {
     }
         return false;
 }
+
+export default snap_eligibility
