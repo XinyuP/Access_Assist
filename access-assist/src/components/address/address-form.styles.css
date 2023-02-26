@@ -1,31 +1,53 @@
-.address-label{
+.address-label {
+	text-align: center;
 
-    text-align: center;
+	width: 496px;
+	height: 72px;
 
-    width: 496px;
-    height: 72px;
-   
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 150%;
-    /* identical to box height, or 72px */
-    
-    letter-spacing: -0.022em;
-    
-    color: #1E1E1E;
-    
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 150%;
+	/* identical to box height, or 72px */
+
+	letter-spacing: -0.022em;
+
+	color: #1e1e1e;
 }
 
-.address-label-p{
-    text-align: center;  
+.address-label-p {
+	text-align: center;
 }
 
-.address-field{
-    position: relative;
-    width: 448px;
-    height: 96px;
-    left: 112px;
-    top: 512px;
+.address-field {
+	position: relative;
+	width: 448px;
+	height: 96px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    border-radius: 18px;
+    background: #dbdbdb 
+
+;
+}
+
+.submit-button {
+	font-size: xx-large;
+	position: relative;
+	width: 338px;
+	height: 103px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #f8cd51;
+	border-radius: 60px;
+}
+
+
+.address-spacer-30{
+    height: 30px;
 }

@@ -42,22 +42,30 @@
 }
 
 .home-button {
-	position: absolute;
+    font-size: xx-large;
+	position: relative;
 	width: 338px;
 	height: 103px;
-	left: 184px;
-	top: 633px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 
 	background: #f8cd51;
 	border-radius: 60px;
 }
 
-
-
+/* 
 .vertical-center {
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+} */
+
+
+.home-spacer-30{
+    height: 30px;
+
 }

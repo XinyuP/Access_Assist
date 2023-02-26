@@ -15,12 +15,18 @@ const Home = () => {
 						resources near you that you are eligible for!
 					</p>
 				</div>
-				<h2 className='home-start'>Let's get started!</h2>
+				<h2 className='home-start'>
+					Let's get started!
+				</h2>
+				<div className='home-spacer-30'></div>
+				<div className='home-spacer-30'></div>
 
 				{/* <div className='home-arrow'><AiOutlineArrowRight /></div> */}
 				<Link to='/address'>
 					<div className='vertical-center'>
-						<button className='home-button'>Get Started <AiOutlineArrowRight/></button>
+						<button className='home-button'>
+							Get Started <AiOutlineArrowRight />
+						</button>
 					</div>
 				</Link>
 			</div>
