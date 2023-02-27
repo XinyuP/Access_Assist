@@ -61,9 +61,9 @@ function Form() {
 					</label>
 					<input
 						type='text'
-						id='household-incomet'
-						name='household-incomet'
-						placeholder='Enter your household incomet per month'
+						id='household-income'
+						name='household-income'
+						placeholder='Enter your household income per month'
 					/>
 				</div>
 
