@@ -5,7 +5,7 @@ Demo Video: https://youtu.be/cdvxypNxgWc
 
 Devpost: https://devpost.com/software/access-assist  
 
-Figma: https://www.figma.com/file/ZmNoReCJvOCxZyZpMueqvj/Access-Assist?node-id=0%3A1&t=p0Ylh9oc0kg3Ji4l-1 \
+Figma: https://www.figma.com/file/ZmNoReCJvOCxZyZpMueqvj/Access-Assist?node-id=0%3A1&t=p0Ylh9oc0kg3Ji4l-1
 
 <br/>
 **Inspiration**: \
