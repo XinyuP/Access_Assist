@@ -5,7 +5,8 @@ Demo Video: https://youtu.be/cdvxypNxgWc \
 
 Devpost: https://devpost.com/software/access-assist  \
 
-
+Figma: https://www.figma.com/file/ZmNoReCJvOCxZyZpMueqvj/Access-Assist?t=XJOAIGuMf3jAKJM4-0 \
+<br/>
 **Inspiration**: \
 Access Assist was born out of our team's identification of a problem - that many available benefit programs are underutilized due to a lack of information about them and their eligibility criteria. Our research revealed that this issue is especially prevalent among individuals who could benefit from these programs the most. \
 \
